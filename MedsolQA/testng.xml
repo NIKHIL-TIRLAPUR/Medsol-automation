@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="MedsolApplication">
+    <classes>
+      <class name="com.medsol.testcases.TC_Documents_Documents_NewDocument"/>
+      <class name="com.medsol.testcases.TC_Documents_Documents_SearchDocument"/>
+      <class name="com.medsol.testcases.TC_BedManagement_BedAssigns_NewBedAssign"/>
+      <class name="com.medsol.testcases.TC_Billing_Invoice_Created"/>
+      <class name="com.medsol.testcases.TC_LoginTest_Created"/>
+      <class name="com.medsol.testcases.TC_Billing_AdvancePayments_Created"/>
+      <class name="com.medsol.testcases.TC_Documents_Documents_EditDocument"/>
+      <class name="com.medsol.testcases.TC_Billing_Invoice_Delete"/>
+      <class name="com.medsol.testcases.TC_BedManagement_BedAssigns_BedStatus"/>
+      <class name="com.medsol.testcases.TC_Billing_Invoice_Edit"/>
+      <class name="com.medsol.testcases.TC_Accountant_Created"/>
+      <class name="com.medsol.testcases.TC_Documents_Documents_DeleteDocument"/>
+    </classes>
+  </test> <!-- MedsolApplication -->
+</suite> <!-- Suite -->
