@@ -7,18 +7,18 @@ import org.testng.annotations.Test;
 import com.medsol.pageobject.Bedspage;
 import com.medsol.pageobject.Loginpage;
 
-public class TC_BedDeleted extends baseclass {
+public class TC_BedDeleted extends Baseclass {
 	Loginpage OBlogin;
 	Bedspage ObNewBed;
-	public String bedname = Readprop.getBedmanagementBedName();
-	public String editbedname = Readprop.getBedmanagementBedEditBedname();
+	public String bedname = config.getBedmanagementBedName();
+	public String editbedname = config.getBedmanagementBedEditBedname();
 	
 	@Test
 	public void bedCreated() throws InterruptedException {
 		OBlogin = new Loginpage(driver);
 		OBlogin.clickonlogin();
-		OBlogin.setemail(Email);
-		OBlogin.setpassword(pw);
+		OBlogin.setemail(username);
+		OBlogin.setpassword(password);
 		OBlogin.clickonloginsubmit();
 		Assert.assertTrue(driver.findElement(By.xpath("(//a[@class='nav-link  d-flex align-items-center py-3'])[1]"))
 				.isDisplayed());

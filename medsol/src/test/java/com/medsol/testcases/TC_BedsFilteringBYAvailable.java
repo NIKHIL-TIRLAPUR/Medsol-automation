@@ -5,15 +5,15 @@ import org.testng.annotations.Test;
 import com.medsol.pageobject.Bedspage;
 import com.medsol.pageobject.Loginpage;
 
-public class TC_BedsFilteringBYAvailable  extends baseclass {
+public class TC_BedsFilteringBYAvailable  extends Baseclass {
 	Loginpage OBlogin;
 	Bedspage ObNewBed;
 	@Test(priority=1)
 	public void BedsfilteringAvailableBeds() throws InterruptedException {
 		OBlogin = new Loginpage(driver);
 		OBlogin.clickonlogin();
-		OBlogin.setemail(Email);
-		OBlogin.setpassword(pw);
+		OBlogin.setemail(username);
+		OBlogin.setpassword(password);
 		OBlogin.clickonloginsubmit();
 
 		ObNewBed = new Bedspage(driver);

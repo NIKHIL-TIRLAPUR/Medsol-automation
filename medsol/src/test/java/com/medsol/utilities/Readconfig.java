@@ -4,10 +4,10 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-public class ReadConfig {
+public class Readconfig {
 	Properties pro;
 
-	public ReadConfig() {
+	public Readconfig() {
 		File src = new File("./Confoguration/Config.properties");
 
 		try {
@@ -19,12 +19,12 @@ public class ReadConfig {
 		}
 	}
 
-	public String getApplicationUrl() {
+	public String getapplicationurl() {
 		String url = pro.getProperty("URL");
 		return url;
 	}
 
-	public String getemail() {
+	public String getusername() {
 		String email = pro.getProperty("E-MAil");
 		return email;
 	}
@@ -32,6 +32,21 @@ public class ReadConfig {
 	public String getpassword() {
 		String pw = pro.getProperty("PW");
 		return pw;
+	}
+
+	public String getChromepath() {
+		String chromepath = pro.getProperty("chromepath");
+		return chromepath;
+	}
+
+	public String getIEpath() {
+		String iepath = pro.getProperty("iepath");
+		return iepath;
+	}
+
+	public String getFirefoxpath() {
+		String firefoxpath = pro.getProperty("firefoxpath");
+		return firefoxpath;
 	}
 
 	public String getEmployeePayrollSLNO() {
@@ -202,6 +217,26 @@ public class ReadConfig {
 	public String getBulkbedDescriptionEdit() {
 		String BulkbedDescriptionEdit = pro.getProperty("BulkbedDescriptionEdit");
 		return BulkbedDescriptionEdit;
+	}
+
+	public String getDoctorDepartment() {
+		String department1 = pro.getProperty("DoctorDepartment");
+		return department1;
+	}
+
+	public String geteditDoctorDepartment() {
+		String editdepartment = pro.getProperty("EditDoctorDepartment");
+		return editdepartment;
+	}
+
+	public String getdescription() {
+		String editdescription1 = pro.getProperty("DoctorDepartmentDescription");
+		return editdescription1;
+	}
+
+	public String geteditDoctorDepartmentDescription() {
+		String editdepartment = pro.getProperty("EditDoctorDepartmentDescription");
+		return editdepartment;
 	}
 
 }

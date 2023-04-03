@@ -11,8 +11,11 @@ import org.openqa.selenium.support.ui.Select;
 
 public class PaymentsPage {
 
-	public PaymentsPage(WebDriver driver) {
-		PageFactory.initElements(driver, this);
+	WebDriver ldriver;
+
+	public PaymentsPage(WebDriver rdriver) {
+		ldriver = rdriver;
+		PageFactory.initElements(rdriver, this);
 	}
 
 	@FindBy(xpath = "(//a[@class='nav-link  d-flex align-items-center py-3'])[5]")

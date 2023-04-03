@@ -7,8 +7,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Employeepayrollpage {
-	public Employeepayrollpage(WebDriver driver) {
-		PageFactory.initElements(driver, this);
+	WebDriver ldriver;
+
+	public Employeepayrollpage(WebDriver rdriver) {
+		ldriver = rdriver;
+		PageFactory.initElements(rdriver, this);
 	}
 
 	@FindBy(xpath = "(//a[@class='nav-link  d-flex align-items-center py-3'])[5]")

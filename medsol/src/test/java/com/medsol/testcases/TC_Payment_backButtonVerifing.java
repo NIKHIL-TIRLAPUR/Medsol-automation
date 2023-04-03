@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.medsol.pageobject.Loginpage;
 import com.medsol.pageobject.PaymentsPage;
 
-public class TC_Payment_backButtonVerifing  extends baseclass {
+public class TC_Payment_backButtonVerifing  extends Baseclass {
 	Loginpage OBlogin;
 	PaymentsPage ObPayment;
 
@@ -13,8 +13,8 @@ public class TC_Payment_backButtonVerifing  extends baseclass {
 	public void PaymentCreated() {
 		OBlogin = new Loginpage(driver);
 		OBlogin.clickonlogin();
-		OBlogin.setemail(Email);
-		OBlogin.setpassword(pw);
+		OBlogin.setemail(username);
+		OBlogin.setpassword(password);
 		OBlogin.clickonloginsubmit();
 
 		ObPayment = new PaymentsPage(driver);

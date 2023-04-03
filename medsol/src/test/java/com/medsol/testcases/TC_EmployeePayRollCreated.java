@@ -7,24 +7,24 @@ import org.testng.annotations.Test;
 import com.medsol.pageobject.Employeepayrollpage;
 import com.medsol.pageobject.Loginpage;
 
-public class TC_EmployeePayRollCreated extends baseclass {
+public class TC_EmployeePayRollCreated extends Baseclass {
 	Loginpage OBlogin;
 	Employeepayrollpage OBEmpPayroll;
-	public String SlNO = Readprop.getEmployeePayrollSLNO();
-	public String Role = Readprop.getEmployeePayroll_Role();
-	public String Mon = Readprop.getEmployeePayroll_month();
-	public String YY = Readprop.getEmployeePayroll_year();
-	public String BaseSal = Readprop.getEmployeePayroll_BasicSalary();
-	public String Allowance = Readprop.getEmployeePayroll_Allowance();
-	public String Deduc = Readprop.getEmployeePayroll_Deduction();
-	public String Status = Readprop.getEmployeePayroll_Status();
+	public String SlNO = config.getEmployeePayrollSLNO();
+	public String Role = config.getEmployeePayroll_Role();
+	public String Mon = config.getEmployeePayroll_month();
+	public String YY = config.getEmployeePayroll_year();
+	public String BaseSal = config.getEmployeePayroll_BasicSalary();
+	public String Allowance = config.getEmployeePayroll_Allowance();
+	public String Deduc = config.getEmployeePayroll_Deduction();
+	public String Status = config.getEmployeePayroll_Status();
 
 	@Test
 	public void bedCreated() throws InterruptedException {
 		OBlogin = new Loginpage(driver);
 		OBlogin.clickonlogin();
-		OBlogin.setemail(Email);
-		OBlogin.setpassword(pw);
+		OBlogin.setemail(username);
+		OBlogin.setpassword(password);
 		OBlogin.clickonloginsubmit();
 		Assert.assertTrue(driver.findElement(By.xpath("(//a[@class='nav-link  d-flex align-items-center py-3'])[1]"))
 				.isDisplayed());

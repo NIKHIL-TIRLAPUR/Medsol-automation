@@ -7,20 +7,20 @@ import org.testng.annotations.Test;
 import com.medsol.pageobject.Bedspage;
 import com.medsol.pageobject.Loginpage;
 
-public class TC_BedCreated extends baseclass {
+public class TC_BedCreated extends Baseclass {
 	Loginpage OBlogin;
 	Bedspage ObNewBed;
-	public String bedname= Readprop.getBedmanagementBedName();
-	public String charges = Readprop.getBedmanagementCharge();
-	public String des = Readprop.getBedmanagementDescription();
-	public String bedtype= Readprop.getBedmanagementBedtype();
+	public String bedname= config.getBedmanagementBedName();
+	public String charges = config.getBedmanagementCharge();
+	public String des = config.getBedmanagementDescription();
+	public String bedtype= config.getBedmanagementBedtype();
 	
 	@Test
 	public void bedCreated() throws InterruptedException {
 		OBlogin = new Loginpage(driver);
 		OBlogin.clickonlogin();
-		OBlogin.setemail(Email);
-		OBlogin.setpassword(pw);
+		OBlogin.setemail(username);
+		OBlogin.setpassword(password);
 		OBlogin.clickonloginsubmit();
 		Assert.assertTrue(driver.findElement(By.xpath("(//a[@class='nav-link  d-flex align-items-center py-3'])[1]"))
 				.isDisplayed());

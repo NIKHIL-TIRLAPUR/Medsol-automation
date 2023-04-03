@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.medsol.pageobject.Bedspage;
 import com.medsol.pageobject.Loginpage;
 
-public class TC_BedsFilteringBYreset  extends baseclass {
+public class TC_BedsFilteringBYreset  extends Baseclass {
 	Loginpage OBlogin;
 	Bedspage ObNewBed;
 		
@@ -13,8 +13,8 @@ public class TC_BedsFilteringBYreset  extends baseclass {
 	public void BedsfilteringReset() throws InterruptedException {
 		OBlogin = new Loginpage(driver);
 		OBlogin.clickonlogin();
-		OBlogin.setemail(Email);
-		OBlogin.setpassword(pw);
+		OBlogin.setemail(username);
+		OBlogin.setpassword(password);
 		OBlogin.clickonloginsubmit();
 
 		ObNewBed = new Bedspage(driver);

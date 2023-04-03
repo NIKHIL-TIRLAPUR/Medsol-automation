@@ -4,9 +4,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-public class Bedtypepage  {
-	public Bedtypepage(WebDriver driver) {
-	PageFactory.initElements(driver, this);
+
+public class Bedtypepage {
+	WebDriver ldriver;
+
+	public Bedtypepage(WebDriver rdriver) {
+		ldriver = rdriver;
+		PageFactory.initElements(rdriver, this);
 	}
 
 	@FindBy(xpath = "(//a[@class='nav-link  d-flex align-items-center py-3'])[6]")
@@ -36,7 +40,6 @@ public class Bedtypepage  {
 	@FindBy(xpath = "//span[@class='position-absolute d-flex align-items-center top-0 bottom-0 left-0 text-gray-600 ms-3']")
 	private WebElement btnbedtypeSearchimage;
 
-	
 	@FindBy(xpath = "//button[@class='swal-button swal-button--confirm']")
 	private WebElement BtnconfirmDelete;
 
@@ -51,12 +54,10 @@ public class Bedtypepage  {
 
 	@FindBy(xpath = "//textArea[@id='BedTypeEditDescription']")
 	private WebElement tbeditdes;
-	
+
 	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/form[1]/div[2]/button[1]")
 	private WebElement btnsaveEdit;
 
-
-	
 	public void Bedmanagement() {
 		this.btnBedManagement.click();
 	}
@@ -74,9 +75,10 @@ public class Bedtypepage  {
 	}
 
 	public void DescreptionEdit(String Description) {
-	this.tbeditdes.clear();
-	this.tbeditdes.sendKeys(Description);
+		this.tbeditdes.clear();
+		this.tbeditdes.sendKeys(Description);
 	}
+
 	public void save() {
 		this.btnSave.submit();
 	}
@@ -88,27 +90,24 @@ public class Bedtypepage  {
 	public void Bedtypes() {
 		this.btnBedTypes.click();
 	}
-	
+
 	public void Bedtypesdelete(String Bedtype) throws InterruptedException {
 		this.btnbedtypeSearch.sendKeys(Bedtype);
 		this.btnbedtypeSearchimage.click();
 		this.BtnDelete.click();
 		this.BtnconfirmDelete.click();
 	}
-	
-	public void BedtypesEdit(String BT,String Bedtype) throws InterruptedException {
+
+	public void BedtypesEdit(String BT, String Bedtype) throws InterruptedException {
 		this.btnbedtypeSearch.sendKeys(BT);
 		this.btnbedtypeSearchimage.click();
 		this.btnEdit.click();
 		this.tbEditbedtype.clear();
-	    this.tbEditbedtype.sendKeys(Bedtype);	
+		this.tbEditbedtype.sendKeys(Bedtype);
 	}
+
 	public void saveEdit() {
 		this.btnsaveEdit.submit();
 	}
 
-	
 }
-
-
-

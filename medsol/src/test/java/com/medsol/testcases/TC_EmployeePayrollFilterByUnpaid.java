@@ -7,17 +7,17 @@ import org.testng.annotations.Test;
 import com.medsol.pageobject.Employeepayrollpage;
 import com.medsol.pageobject.Loginpage;
 
-public class TC_EmployeePayrollFilterByUnpaid extends baseclass {
+public class TC_EmployeePayrollFilterByUnpaid extends Baseclass {
 	Loginpage OBlogin;
 	Employeepayrollpage OBEmpPayroll;
-	public String Status = Readprop.getEmployeePayroll_Status1();
+	public String Status = config.getEmployeePayroll_Status1();
 
 		@Test
 	public void bedCreated() throws InterruptedException {
 		OBlogin = new Loginpage(driver);
 		OBlogin.clickonlogin();
-		OBlogin.setemail(Email);
-		OBlogin.setpassword(pw);
+		OBlogin.setemail(username);
+		OBlogin.setpassword(password);
 		OBlogin.clickonloginsubmit();
 		Assert.assertTrue(driver.findElement(By.xpath("(//a[@class='nav-link  d-flex align-items-center py-3'])[1]"))
 				.isDisplayed());

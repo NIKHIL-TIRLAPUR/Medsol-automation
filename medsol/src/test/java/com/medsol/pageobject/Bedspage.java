@@ -6,14 +6,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.medsol.testcases.baseclass;
+import com.medsol.testcases.Baseclass;
 
-public class Bedspage extends baseclass {
+public class Bedspage extends Baseclass {
+	WebDriver ldriver;
 
-	WebDriver driver;
-
-	public Bedspage(WebDriver driver) {
-		PageFactory.initElements(driver, this);
+	public Bedspage(WebDriver rdriver) {
+		ldriver = rdriver;
+		PageFactory.initElements(rdriver, this);
 	}
 
 	@FindBy(xpath = "(//a[@class='nav-link  d-flex align-items-center py-3'])[6]")
