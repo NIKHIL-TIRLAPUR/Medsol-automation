@@ -580,11 +580,91 @@ public class Readconfig {
 		return propertyvalue;
 	}
 	
+	public String getBloodBank()
+	{
+		String Bloodbank=pro.getProperty("Bloodbank");
+		return  Bloodbank;
+	}
 	
-	
-	
-	
-	
-	
+		public String getNewBloodBank()
+		{
+			String NewBloodBank=pro.getProperty("NewBloodBank");
+			return NewBloodBank;
+		}
+		
+		public String getNewbloodgroup()
+		{
+			String Newbloodgroup =pro.getProperty("Newbloodgroup");
+			return Newbloodgroup;
+		}
+		public String getRemainingbags()
+		{
+			String Remainingbags =pro.getProperty("Remainingbags");
+			return Remainingbags;
+		}
+		
+		public String getPatientname()
+		{
+			String Patientname =pro.getProperty("Patientname");
+			return Patientname;
+		}
+		public String getDescription()
+		{
+			String Description  =pro.getProperty("Description ");
+			return Description ;
+		}
+		
+		public String getDoctorDescription()
+		{
+			String DoctorDescription  =pro.getProperty("DoctorDescription");
+			return DoctorDescription ;
+		}
+		public String getBloodbank()
+		{
+			String Bloodbank  =pro.getProperty("Bloodbank");
+			return Bloodbank ;
+		}	
+		public String getNewBloodBank1()
+		{
+			String NewBloodBank  =pro.getProperty("NewBloodBank");
+			return NewBloodBank ;
+		}
+		public String getBloodgroup1()
+		{
+			String Bloodgroup  =pro.getProperty("Bloodgroup");
+			return Bloodgroup ;
+		}
+		public String getRemainingbags1()
+		{
+			String Remainingbags1  =pro.getProperty("Remainingbags1");
+			return Remainingbags1 ;
+			
+		}
+		public String  Donarname()
+		{
+			String Donarname  =pro.getProperty("Donarname");
+			return Donarname ;
+		}		
+		public String  DonarAge()
+		{
+			String DonarAge  =pro.getProperty("Donarage");
+			return DonarAge ;
+		}	
+		public String  Donarbloodgroup()
+		{
+			String Donarbloodgroup  =pro.getProperty("Donarbloodgroup");
+			return Donarbloodgroup;
+		}
+		public String  Donargender()
+		{
+			String   Donargender =pro.getProperty(" Donargender");
+			return  Donargender;
+		}
+		public String Donarlastdonationdate()
+		{
+			String Donarlastdonationdate =pro.getProperty("Donarlastdonationdate ");
+			return Donarlastdonationdate ;
+		
+}
 
 }

@@ -6,6 +6,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
@@ -14,7 +15,7 @@ import org.testng.annotations.Parameters;
 
 import com.medsol1.utilities.Readconfig;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class Baseclass {
 	
@@ -35,9 +36,21 @@ Readconfig config= new Readconfig();
 	{
 		if(br.equals("chrome"))
 		{
-		System.setProperty("webdriver.chrome.driver", config.getChromepath());
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\anuradha\\git\\Medsol-automation\\Drivers\\chromedriver.exe");
 	    //WebDriverManager.chromedriver().setup();
-		driver= new ChromeDriver();
+		//driver= new ChromeDriver();
+
+			// WebDriverManager.chromedriver().setup();
+			    ChromeOptions options = new ChromeOptions();
+			    options.addArguments("--remote-allow-origins=*");
+				driver= new ChromeDriver(options); 
+
+		    
+			
+			
+			
+			
+			
 		}
 		else if(br.equals("firefox"))
 		{

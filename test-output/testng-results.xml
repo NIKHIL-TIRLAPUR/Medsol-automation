@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-02T17:08:15 IST" name="medsol1" finished-at="2023-03-02T17:08:44 IST" duration-ms="29015">
+  <suite started-at="2023-04-03T13:27:01 IST" name="Suite" finished-at="2023-04-03T13:27:36 IST" duration-ms="35063">
     <groups>
     </groups>
-    <test started-at="2023-03-02T17:08:15 IST" name="medicalapp Test" finished-at="2023-03-02T17:08:44 IST" duration-ms="29015">
-      <class name="com.medsol1.testcases.TC_Admin_modified">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.medsol1.testcases.TC_Admin_modified@139982de]" started-at="2023-03-02T17:08:15 IST" name="setup" finished-at="2023-03-02T17:08:30 IST" duration-ms="15055" status="PASS">
+    <test started-at="2023-04-03T13:27:01 IST" name="Test" finished-at="2023-04-03T13:27:36 IST" duration-ms="35063">
+      <class name="com.medsol1.testcases.Tc_BloodDonar">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.medsol1.testcases.Tc_BloodDonar@68f4865]" started-at="2023-04-03T13:27:01 IST" name="setup" finished-at="2023-04-03T13:27:16 IST" duration-ms="15117" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,51 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Adminmodified()[pri:0, instance:com.medsol1.testcases.TC_Admin_modified@139982de]" started-at="2023-03-02T17:08:30 IST" name="Adminmodified" finished-at="2023-03-02T17:08:44 IST" duration-ms="13571" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method signature="BloodDonar()[pri:0, instance:com.medsol1.testcases.Tc_BloodDonar@68f4865]" started-at="2023-04-03T13:27:16 IST" name="BloodDonar" finished-at="2023-04-03T13:27:36 IST" duration-ms="19304" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=110.0.5481.178)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a5b161174953896dad7cf0d639677698, clearElement {id=17683467-2c99-4455-96dc-145e4c2f6c1b}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49167}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49167/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (a5b161174953896dad7cf0d639677698)] -> name: first_name]
-Session ID: a5b161174953896dad7cf0d639677698]]>
+              <![CDATA[Cannot invoke "Object.equals(Object)" because "this.DonaBloodGroup" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=110.0.5481.178)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a5b161174953896dad7cf0d639677698, clearElement {id=17683467-2c99-4455-96dc-145e4c2f6c1b}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49167}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49167/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (a5b161174953896dad7cf0d639677698)] -> name: first_name]
-Session ID: a5b161174953896dad7cf0d639677698
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:132)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy20.clear(Unknown Source)
-at com.medol1.pageobjects.Adminpage.clearfirstnameandsetnewname(Adminpage.java:225)
-at com.medsol1.testcases.TC_Admin_modified.Adminmodified(TC_Admin_modified.java:32)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.equals(Object)" because "this.DonaBloodGroup" is null
+at com.medol1.pageobjects.BloodDonarPage.DonarBloodGroup(BloodDonarPage.java:131)
+at com.medsol1.testcases.Tc_BloodDonar.BloodDonar(Tc_BloodDonar.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -89,15 +57,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Adminmodified -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.medsol1.testcases.TC_Admin_modified@139982de]" started-at="2023-03-02T17:08:44 IST" name="teardown" finished-at="2023-03-02T17:08:44 IST" duration-ms="330" status="PASS">
+        </test-method> <!-- BloodDonar -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.medsol1.testcases.Tc_BloodDonar@68f4865]" started-at="2023-04-03T13:27:36 IST" name="teardown" finished-at="2023-04-03T13:27:36 IST" duration-ms="592" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.medsol1.testcases.TC_Admin_modified -->
-    </test> <!-- medicalapp Test -->
-  </suite> <!-- medsol1 -->
+      </class> <!-- com.medsol1.testcases.Tc_BloodDonar -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
