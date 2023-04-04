@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name=" medsol Suite">
+	<test name=" Login Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<!--<class name="com.medsol.testcases.TC_Logintest_created"/> -->
+			<!--<class name="com.medsol.testcases.TC_Admin_created" /> --> 
+			<!--<class name="com.medsol.testcases.TC_Accountant_created" /> -->  
+			<!--<class name="com.medsol.testcases.TC_Billings_created" /> --> 
+			<!--<class name="com.medsol.testcases.TC_LoginDDT_000" /> -->
+			<!--<class name="com.medsol.testcases.TC_Bedmanagement_created" /> --> 
+			<!--<class name="com.medsol.testcases.TC_Bloodbanktest_created" /> -->
+			<!--<class name="com.medsol.testcases.TC_Invoice_created" /> --> 
+			<class name="com.medsol.testcases.TC_Payments_created" /> 
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
