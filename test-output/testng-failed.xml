@@ -4,13 +4,15 @@
   <test thread-count="5" name="medicalapp Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.medsol1.testcases.TC_Admin_created">
+      <class name="com.medsol1.testcases.TC_Billings">
         <methods>
-          <include name="Admintest"/>
+          <include name="editbilling_test"/>
           <include name="setup"/>
           <include name="teardown"/>
+          <include name="deleteilling_test"/>
+          <include name="billing_test"/>
         </methods>
-      </class> <!-- com.medsol1.testcases.TC_Admin_created -->
+      </class> <!-- com.medsol1.testcases.TC_Billings -->
     </classes>
   </test> <!-- medicalapp Test(failed) -->
 </suite> <!-- Failed suite [medsol1] -->

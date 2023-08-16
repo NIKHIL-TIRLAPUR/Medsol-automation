@@ -5,11 +5,15 @@
   <test name="medicalapp Test">
 	  <parameter name="browser" value="chrome"/>
     <classes>
-       <class name="com.medsol1.testcases.TC_Logintest_created"/> 
-     
+      <!-- <class name="com.medsol1.testcases.TC_Logintest_created"/> -->
+     <!--<class name="com.medsol1.testcases.TC_Beds_Management_Beds"/>-->
+      <!--<class name="com.medsol1.testcases.TC_Beds_Management_Beds_NewBulkBed"/>-->
+       <!--<class name="com.medsol1.testcases.TC_Documents"/>-->
      <!-- <class name="com.medsol1.testcases.TC_Admin_created"/>  -->
        <!-- <class name="com.medsol1.testcases.TC_Admin_modified"/>-->
      <!--<class name="com.medsol1.testcases.TC_Admin_delete"/> --> 
+     <!--<class name="com.medsol1.testcases.TC_Doctors"/>-->
+    <class name="com.medsol1.testcases.TC_Billings"/>
     </classes>
   </test> 
 </suite> 

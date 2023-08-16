@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-28T14:13:52 IST" name="medsol1" finished-at="2023-04-28T14:14:26 IST" duration-ms="34833">
+  <suite started-at="2023-08-16T00:19:45 IST" name="medsol1" finished-at="2023-08-16T00:21:43 IST" duration-ms="118739">
     <groups>
     </groups>
-    <test started-at="2023-04-28T14:13:52 IST" name="medicalapp Test" finished-at="2023-04-28T14:14:26 IST" duration-ms="34833">
-      <class name="com.medsol1.testcases.TC_Logintest_created">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.medsol1.testcases.TC_Logintest_created@7e6f74c]" started-at="2023-04-28T14:13:52 IST" name="setup" finished-at="2023-04-28T14:14:10 IST" duration-ms="18456" status="PASS">
+    <test started-at="2023-08-16T00:19:45 IST" name="medicalapp Test" finished-at="2023-08-16T00:21:43 IST" duration-ms="118739">
+      <class name="com.medsol1.testcases.TC_Billings">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.medsol1.testcases.TC_Billings@3f191845]" started-at="2023-08-16T00:19:45 IST" name="setup" finished-at="2023-08-16T00:20:14 IST" duration-ms="28905" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="logintest()[pri:0, instance:com.medsol1.testcases.TC_Logintest_created@7e6f74c]" started-at="2023-04-28T14:14:10 IST" name="logintest" finished-at="2023-04-28T14:14:26 IST" duration-ms="16008" status="PASS">
+        <test-method signature="billing_test()[pri:0, instance:com.medsol1.testcases.TC_Billings@3f191845]" started-at="2023-08-16T00:20:14 IST" name="billing_test" finished-at="2023-08-16T00:21:12 IST" duration-ms="58382" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.medsol1.testcases.TC_Logintest_created@7e6f74c]" started-at="2023-04-28T14:14:26 IST" name="teardown" finished-at="2023-04-28T14:14:26 IST" duration-ms="318" status="PASS">
+        </test-method> <!-- billing_test -->
+        <test-method signature="editbilling_test()[pri:1, instance:com.medsol1.testcases.TC_Billings@3f191845]" started-at="2023-08-16T00:21:12 IST" name="editbilling_test" finished-at="2023-08-16T00:21:40 IST" depends-on-methods="com.medsol1.testcases.TC_Billings.billing_test" duration-ms="27686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editbilling_test -->
+        <test-method signature="deleteilling_test()[pri:2, instance:com.medsol1.testcases.TC_Billings@3f191845]" started-at="2023-08-16T00:21:40 IST" name="deleteilling_test" finished-at="2023-08-16T00:21:42 IST" depends-on-methods="com.medsol1.testcases.TC_Billings.billing_test, com.medsol1.testcases.TC_Billings.editbilling_test" duration-ms="1759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteilling_test -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.medsol1.testcases.TC_Billings@3f191845]" started-at="2023-08-16T00:21:42 IST" name="teardown" finished-at="2023-08-16T00:21:43 IST" duration-ms="1794" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.medsol1.testcases.TC_Logintest_created -->
+      </class> <!-- com.medsol1.testcases.TC_Billings -->
     </test> <!-- medicalapp Test -->
   </suite> <!-- medsol1 -->
 </testng-results>
