@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="medsol1">
+
+  <test name="medicalapp Test">
+	  <parameter name="browser" value="chrome"/>
+    <classes>
+		
+		
+     <!-- <class name="com.medsol1.testcases.TC_Logintest_created"/> -->
+      
+      
+     <!-- <class name="com.medsol1.testcases.TC_Admin_created"/> -->
+     <!-- <class name="com.medsol1.testcases.TC_Admin_modified"/> -->
+     <!-- <class name="com.medsol1.testcases.TC_Admin_delete"/> -->
+    
+     <!-- <class name="com.medsol1.testcases.TC_Appointments_NewAppointments_Create"/> -->
+       	  
+      
+     <!-- <class name="com.medsol1.testcases.TC_Billing_Payments_Create"/> -->
+     <!-- <class name="com.medsol1.testcases.TC_Billing_Payments_Modified"/> -->
+     <!-- <class name="com.medsol1.testcases.TC_Billing_Payments_Delete"/> -->
+      
+      
+     <!-- <class name="com.medsol1.testcases.TC_Billing_Accounts_Create"/> -->
+     <!-- <class name="com.medsol1.testcases.TC_Billing_Accounts_Modified"/> -->
+     <!-- <class name="com.medsol1.testcases.TC_Billing_Accounts_Delete"/> -->
+     
+     
+     <!-- <class name="com.medsol1.testcases.TC_BedManagement_BedTypes_Create"/> -->
+     <!-- <class name="com.medsol1.testcases.TC_BedManagement_BedTypes_Modified"/> -->
+     <!-- <class name="com.medsol1.testcases.TC_BedManagement_BedTypes_Delete"/> -->
+      
+      
+   
+    <!-- <class name="com.medsol1.testcases.TC_BloodBank_BloodDonor_Create"/> -->
+    <!-- <class name="com.medsol1.testcases.TC_BloodBank_BloodDonor_Modified"/> -->
+    <!-- <class name="com.medsol1.testcases.TC_BloodBank_BloodDonor_Delete"/> -->
+  
+      
+    
+    <!-- <class name="com.medsol1.testcases.TC_Doctors_Prescriptions_Create"/> -->
+   
+    
+      
+    <!-- <class name="com.medsol1.testcases.TC_Finances_Income_Create"/> -->
+    <!-- <class name="com.medsol1.testcases.TC_Finances_Income_Modified"/> -->
+         <class name="com.medsol1.testcases.TC_Finances_Income_Delete"/> 
+
+     
+     
+      
+    </classes>
+  </test> 
+</suite> 
+
+
+
+
+
+
