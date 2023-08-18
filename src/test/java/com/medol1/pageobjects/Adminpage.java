@@ -83,7 +83,7 @@ WebDriver ldriver;
 	@FindBy(xpath="//button[normalize-space()='Yes, Delete']")
     WebElement yesdeletebutton;
 	
-	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/table[1]/tbody[1]/tr[2]/td[4]/div[1]/a[1]/*[name()='svg'][1]/*[name()='path'][1]")
+	@FindBy(xpath="//tbody/tr[1]/td[4]/div[1]/a[1]//*[name()='svg']//*[name()='path' and contains(@fill,'currentCol')]")
     WebElement editbutton;
 	
 	@FindBy(xpath="//tbody/tr[1]/td[3]/div[1]/label[1]/input[1]")

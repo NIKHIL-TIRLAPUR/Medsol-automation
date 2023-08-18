@@ -19,18 +19,24 @@
   </properties>
 
   <dependencies>
+	  
+	  
+	  
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
-       <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+    
+    
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.8.0</version>
+    <version>4.7.2</version>
 </dependency>
+
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
     <groupId>org.testng</groupId>
@@ -42,8 +48,10 @@
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
-    <version>5.3.1</version>
+    <version>5.3.2</version>
 </dependency>
+
+
 <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
 <dependency>
     <groupId>org.apache.poi</groupId>
@@ -68,19 +76,19 @@
 <dependency>
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
-    <version>3.1.2</version>
+    <version>5.0.9</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
 <dependency>
     <groupId>org.apache.commons</groupId>
     <artifactId>commons-lang3</artifactId>
-    <version>3.0</version>
+    <version>3.12.0</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
 <dependency>
     <groupId>commons-io</groupId>
     <artifactId>commons-io</artifactId>
-    <version>1.3.2</version>
+    <version>2.11.0</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/org.sikuli/sikuli-api -->
 <dependency>
@@ -148,19 +156,6 @@
 
 
 
-
-
-
-
-
-
-
-
-  	<dependency>
-  		<groupId>Medsol</groupId>
-  		<artifactId>Medsol</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
   </dependencies>
 
   <build>
@@ -175,7 +170,7 @@
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
-        </plugin>
+        </plugin>       
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.0</version>
