@@ -2,10 +2,12 @@ package com.medsol1.testcases;
 
 import java.time.Duration;
 
+
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
@@ -20,7 +22,7 @@ public class Baseclass {
 	
 	
 	
-Readconfig config= new Readconfig();
+    Readconfig config= new Readconfig();
 	
 	public String baseurl=config.getapplicationurl();
 	public String username=config.getusername();
@@ -35,9 +37,11 @@ Readconfig config= new Readconfig();
 	{
 		if(br.equals("chrome"))
 		{
-		System.setProperty("webdriver.chrome.driver", config.getChromepath());
-	    //WebDriverManager.chromedriver().setup();
-		driver= new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver", config.getChromepath());
+	    WebDriverManager.chromedriver().setup();
+	    ChromeOptions options = new ChromeOptions();
+	    options.addArguments("--remote-allow-origins=*");
+		driver= new ChromeDriver(options);
 		}
 		else if(br.equals("firefox"))
 		{
@@ -53,12 +57,7 @@ Readconfig config= new Readconfig();
 		driver.get(baseurl);
 		driver.manage().window().maximize();
 		 Thread.sleep(5000);
-
-		//Logger= Logger.getLogger("medsol");
-		//PropertyConfigurator.configure("Log4j2.xml");
-	}
-	
-	
+		 }
 	
 	@AfterClass
 	public void teardown()
@@ -77,31 +76,5 @@ Readconfig config= new Readconfig();
 		String generatedstring2=RandomStringUtils.randomNumeric(5);
 		return (generatedstring2);
 	}
+}	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-}

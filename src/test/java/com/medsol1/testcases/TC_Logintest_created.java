@@ -30,9 +30,4 @@ public class TC_Logintest_created extends Baseclass{
 		Assert.assertTrue(false);
 	}*/
 	}
-	
-	
-	
-	
-
-}
+	}

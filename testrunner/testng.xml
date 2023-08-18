@@ -1,13 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="medsol1">
-  <test name="medicalapp Test">
-	  <parameter name="browser" value="chrome"/>
+
+    <test name="medicalapp Test">
+  
+	 <parameter name="browser" value="chrome"></parameter>
+	  	
     <classes>
-      <!--<class name="com.medsol1.testcases.TC_Logintest_created"/> -->
-     <!--<class name="com.medsol1.testcases.TC_Admin_created"/> --> 
-       <class name="com.medsol1.testcases.TC_Admin_modified"/>
+    
+     <!--<class name="com.medsol1.testcases.TC_Logintest_created"/>-->
+     
+     <!--<class name="com.medsol1.testcases.TC_Billings_Employeepayrole_Created"/>-->
+     
+     <!--<class name="com.medsol1.testcases.TC_Document_Created"/>-->
+     <!-- <class name="com.medsol1.testcases.TC_Document_Delete"/>-->
+     <!--<class name="com.medsol1.testcases.TC_Document_Modified"/>-->
+     
+    <class name="com.medsol1.testcases.TC_BloodBank_BloodDonation_Created"/>
+      <!--<class name="com.medsol1.testcases.TC_BloodBank_BloodDonation_delete"/>-->
+     <!--<class name="com.medsol1.testcases.TC_BloodBank_BloodDonation_Modified"/>-->
+     
+     <!--<class name="com.medsol1.testcases.TC_BloodBank_BloodDonor_Created"/>-->
+     <!--<class name="com.medsol1.testcases.TC_BloodBank_BloodDonor_Deleted"/>-->
+     <!--<class name="com.medsol1.testcases.TC_BloodBank_BloodDonor_Modified"/>-->
+      
+    <!--<class name="com.medsol1.testcases.TC_BedManagement_Bed_Modified "/>-->
+     <!--<class name="com.medsol1.testcases.TC_BedManagement_Bed_created "/>-->
+     
+     <!--<class name="com.medsol1.testcases.TC_BillingAccountCreated"/>-->
+    <!--<class name="com.medsol1.testcases.TC_BillingAccountDelete"/>-->
+     <!--<class name="com.medsol1.testcases.TC_BillingAccountModified"/>-->
+     
+     <!--<class name="com.medsol1.testcases.TC_BloodBankCreated"/>-->
+      <!--<class name="com.medsol1.testcases.TC_BloodBankModified"/>-->
+       
+     <!-- <class name="com.medsol1.testcases.TC_Admin_created"/>  -->
+     <!-- <class name="com.medsol1.testcases.TC_Admin_modified"/>-->
      <!--<class name="com.medsol1.testcases.TC_Admin_delete"/> --> 
+     
     </classes>
+    
   </test> 
+  
 </suite> 

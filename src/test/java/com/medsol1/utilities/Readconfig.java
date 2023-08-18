@@ -580,11 +580,66 @@ public class Readconfig {
 		return propertyvalue;
 	}
 	
-	
-	
-	
-	
-	
-	
+	public String getyear2()
+	{
+		String year2=pro.getProperty("year2");
+		return year2;
+	}
 
-}
+	public String getstandardcharge() {
+		String standardcharge=pro.getProperty("standardcharge");
+		return standardcharge;
+	}
+
+	public String getbed() {
+		String bed=pro.getProperty("bed");
+		return bed;
+	}
+
+	public String geteditbed() {
+		String editbed=pro.getProperty("editbed");
+		return editbed;
+	}
+
+	public String geteditbedtype() {
+		String editbedtype=pro.getProperty("editbedtype");
+		return editbedtype;
+	}
+
+	public String geteditstandardcharge() {
+		String editstandardcharge=pro.getProperty("editstandardcharge");
+		return editstandardcharge;
+	}
+
+	public String getrole() {
+		String role=pro.getProperty("role");
+		return role;
+	}
+
+	public String getsr_no() {
+        String sr_no=pro.getProperty("sr_no");
+        return sr_no;
+	}
+
+	public String getpayrollstatus() {
+		String payrollstatus=pro.getProperty("payrollstatus");
+		return payrollstatus;
+	}
+
+	public String getdeductions() {
+		String deductions=pro.getProperty("deductions");
+		return deductions;
+	}
+
+	public String getbasicsalary() {
+		 String basicsalary=pro.getProperty("basicsalary");
+		return basicsalary;
+	}
+
+	public String getallowance() {
+		String allowance=pro.getProperty("allowance");
+		return allowance;
+	}
+	}
+	
+	
